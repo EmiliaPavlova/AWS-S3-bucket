@@ -1,0 +1,35 @@
+.browserTree {
+  margin-left: 20px;
+}
+
+.expanded, .collapsed {
+  cursor: pointer;
+}
+
+.expanded:hover, .collapsed:hover {
+  text-decoration: underline;
+}
+
+.expanded:before {
+  content: '\25bc';
+  /* color: #001F3F; */
+  font-size: 10px;
+  margin-left: -10px;
+  margin-right: 0.2em;
+}
+
+.collapsed:before {
+  content: '\25b6';
+  color: #001F3F;
+  font-size: 10px;
+  margin-left: -10px;
+  margin-right: 0.2em;
+}
+
+.expanded:hover:before, .collapsed:hover:before {
+  text-decoration: none;
+}
+
+.selected {
+  font-weight: bold;
+}

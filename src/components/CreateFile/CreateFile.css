@@ -1,0 +1,42 @@
+.form {
+  margin-top: 1em;
+}
+
+.newFileTitle {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #3A6D8C;
+}
+
+.newFileTitle:hover {
+  color: #001F3F;
+}
+
+.input {
+  display: block;
+  width: 300px;
+  padding: 0.2em;
+  margin: 0.2em 0;
+  box-sizing: border-box;
+}
+
+.newFileButton {
+  color: #001F3F;
+  background-color: #cee7f3a7;
+}
+
+.newFileButton:disabled {
+  background-color: #c2c2c2;
+  cursor: no-drop;
+}
+
+.newFileButton:not(:disabled):hover {
+  color: #FFF;
+  background-color: #3A6D8C;
+  border-color: #001F3F;
+}
+
+.statusMessage {
+  color: #3A6D8C;
+}

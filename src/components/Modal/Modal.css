@@ -1,0 +1,41 @@
+.modal {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 500px;
+  min-height: 200px;
+  max-height: 300px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.75);
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #FFF;
+  z-index: 5;
+  overflow: auto;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modalClose:after {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  content: "\00d7";
+}
+
+.modalClose:after {
+  content: "\00d7";
+}
+
+.modalClose:hover {
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.75);
+  cursor: pointer;
+}

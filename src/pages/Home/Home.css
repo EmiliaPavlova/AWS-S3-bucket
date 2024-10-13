@@ -1,0 +1,26 @@
+.home {
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 50vh 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.tree {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 90vh;
+  padding: 10px;
+  overflow: auto;
+  box-shadow: inset 0px 0px 5px #001f3f80;
+  background-color: #cee7f3a7;
+  border-color: #001F3F;
+}
+
+.tree li {
+  color: #001F3F;
+}

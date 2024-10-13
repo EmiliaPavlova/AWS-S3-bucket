@@ -1,0 +1,52 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.confirmForm {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-top: 40px;
+}
+
+.confirmForm > div {
+  display: flex;
+  align-items: center;
+}
+
+.confirmForm label {
+  flex-basis: 40%;
+}
+
+.confirmForm input {
+  margin-left: 10px;
+  padding: 4px 10px;
+}
+
+.errorMessage {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 0.85em;
+}
+
+.noError {
+  height: 20px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  margin-top: 20px;
+  color: #001F3F;
+  background-color: #cee7f3a7;
+}
+
+.submitButton:hover {
+  color: #FFF;
+  background-color: #3A6D8C;
+  border-color: #001F3F;
+}
