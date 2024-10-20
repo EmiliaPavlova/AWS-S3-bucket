@@ -106,7 +106,7 @@ const ConfigForm: React.FC<ConfigFormProps> = ({ onSaveConfig }) => {
           />
         </div>
         {formErrors.bucketName ? <div className="errorMessage">{formErrors.bucketName}</div> : <div className="noError" />}
-        <button className="submitButton" type="submit">Submit</button>
+        <button className="submitButton" type="submit" aria-label="Submit">Submit</button>
       </form>
     </div>
   );

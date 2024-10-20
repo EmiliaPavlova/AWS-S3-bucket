@@ -9,10 +9,10 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ title, content, onClose }) => {
   return (
     <div className="modal">
-      <div className="modalHeader">
+      <header className="modalHeader">
         {title}
-        <div className="modalClose" data-testid="close" onClick={onClose} />
-      </div>
+        <button className="modalClose" data-testid="close" aria-label="Close" onClick={onClose} />
+      </header>
       {content}
     </div>
   )

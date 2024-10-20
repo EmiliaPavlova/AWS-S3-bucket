@@ -91,20 +91,16 @@ const TreeNode: React.FC<TreeNodeProps> = React.memo(({ node, awsConfig, selectC
           </div>
         )}
       </div>
-      {hasChildren && (
-        <div>
-          {node.children.map((childNode) => (
-            <TreeNode
-              key={childNode.key}
-              node={childNode}
-              awsConfig={awsConfig}
-              parent={node as DirectoryNode}
-              selectCategory={selectCategory}
-              onDeleteFile={onDeleteFile}
-            />
-          ))}
-        </div>
-      )}
+      {hasChildren && node.children.map((childNode) => (
+        <TreeNode
+          key={childNode.key}
+          node={childNode}
+          awsConfig={awsConfig}
+          parent={node as DirectoryNode}
+          selectCategory={selectCategory}
+          onDeleteFile={onDeleteFile}
+        />
+      ))}
       {openModal && (
         <Modal
           title={node.name}

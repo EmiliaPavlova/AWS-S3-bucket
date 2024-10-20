@@ -158,7 +158,12 @@ const CreateFile: React.FC<CreateFileProps> = ({ awsConfig, directories, onFileC
             value={formData.fileContent}
             onChange={handleInputChange}
           ></textarea>
-          <button className="newFileButton" disabled={disabled} onClick={createFileOrDirectory}>
+          <button
+            className="newFileButton"
+            disabled={disabled}
+            aria-label={formData.fileName.trim() ? 'Create File' : 'Create Folder'}
+            onClick={createFileOrDirectory}
+          >
             {formData.fileName.trim() ? 'Create File' : 'Create Folder'}
           </button>
 
